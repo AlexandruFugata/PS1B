@@ -7,67 +7,107 @@ void verifica(int n)
 	x2 = n / 10 % 10;
 	x3 = n / 100 % 10;
 	x4 = n / 1000 % 10;
-	if (x4 == 1)
+	switch (x4)
+	{
+	case 1:
 		cout << "M";
-	if (x4 == 2)
+		break;
+	case 2:
 		cout << "MM";
-	if (x4 == 3)
-		cout << "MM";
-	if (x3 == 1)
+		break;
+	case 3:
+		cout << "MMM";
+		break;
+	}
+	switch (x3)
+	{
+	case 1:
 		cout << "C";
-	if (x3 == 2)
+		break;
+	case 2:
 		cout << "CC";
-	if (x3 == 3)
+		break;
+	case 3:
 		cout << "CCC";
-	if (x3 == 4)
+		break;
+	case 4:
 		cout << "CD";
-	if (x3 == 5)
+		break;
+	case 5:
 		cout << "D";
-	if (x3 == 6)
+		break;
+	case 6:
 		cout << "DC";
-	if (x3 == 7)
+		break;
+	case 7:
 		cout << "DCC";
-	if (x3 == 8)
+		break;
+	case 8:
 		cout << "DCCC";
-	if (x3 == 9)
+		break;
+	case 9:
 		cout << "CM";
-	if (x2 == 1)
+		break;
+	}
+	switch (x2)
+	{
+	case 1:
 		cout << "X";
-	if (x2 == 2)
+		break;
+	case 2:
 		cout << "XX";
-	if (x2 == 3)
+		break;
+	case 3:
 		cout << "XXX";
-	if (x2 == 4)
+		break;
+	case 4:
 		cout << "XL";
-	if (x2 == 5)
+		break;
+	case 5:
 		cout << "L";
-	if (x2 == 6)
+		break;
+	case 6:
 		cout << "LX";
-	if (x2 == 7)
+		break;
+	case 7:
 		cout << "LXX";
-	if (x2 == 8)
+		break;
+	case 8:
 		cout << "LXXX";
-	if (x2 == 9)
+		break;
+	case 9:
 		cout << "XC";
-	if (x1 == 1)
+	}
+	switch (x1)
+	{
+	case 1:
 		cout << "I";
-	if (x1 == 2)
+		break;
+	case 2:
 		cout << "II";
-	if (x1 == 3)
+		break;
+	case 3:
 		cout << "III";
-	if (x1 == 4)
+		break;
+	case 4:
 		cout << "IV";
-	if (x1 == 5)
+		break;
+	case 5:
 		cout << "V";
-	if (x1 == 6)
+		break;
+	case 6:
 		cout << "VI";
-	if (x1 == 7)
+		break;
+	case 7:
 		cout << "VII";
-	if (x1 == 8)
+		break;
+	case 8:
 		cout << "VIII";
-	if (x1 == 9)
+		break;
+	case 9:
 		cout << "IX";
-
+		break;
+	}
 	cout << "\n";
 }
 int main()
